@@ -1,3 +1,4 @@
+import path from 'path';
 import express from 'express';
 import mongoose from 'mongoose';
 
@@ -11,7 +12,8 @@ mongoose.connect('mongodb+srv://Yshrael:Yshrael.153241@cluster0.04i3d0j.mongodb.
         app.listen(port, () => {
             console.log(`🚀 Server is running in port ${port}`);
         });
-        
+
+        app.use('/uploads', express.static(path.resolve(__dirname, '..', 'uploads')));
         app.use(express.json());
         app.use(router);
 

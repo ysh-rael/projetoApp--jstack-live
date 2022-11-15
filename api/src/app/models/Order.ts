@@ -19,7 +19,7 @@ export const Order = model('Order', new Schema({
             product: {
                 type: Schema.Types.ObjectId,
                 required: true,
-                ref: 'product', // posível erro aqui(nomeação)
+                ref: 'Product', // posível erro aqui(nomeação)
             },
             quantity: {
                 type: Number,

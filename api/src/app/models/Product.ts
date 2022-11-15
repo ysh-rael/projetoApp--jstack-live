@@ -27,11 +27,11 @@ export const Product = model('Product', new Schema({
                 type: String,
                 required: true,
             },
-        }],
-        category: {
-            type: Schema.Types.ObjectId,
-            required: true,
-            ref: 'Category', // posível erro aqui(nomeação)
-        }
+        }]
     },
+    category: {
+        type: Schema.Types.ObjectId,
+        required: true,
+        ref: 'Category', // posível erro aqui(nomeação)
+    }
 }));
