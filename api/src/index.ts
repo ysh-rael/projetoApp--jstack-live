@@ -7,7 +7,7 @@ import { router } from './routers';
 const app = express();
 const port = 3002;
 
-mongoose.connect('mongodb+srv://Yshrael:Yshrael.153241@cluster0.04i3d0j.mongodb.net/test')
+mongoose.connect('mongodb+srv://Yshrael:Yshrael.153241@cluster0.04i3d0j.mongodb.net/o_poder_do_js')
     .then(() => {
         app.listen(port, () => {
             console.log(`🚀 Server is running in port ${port}`);
@@ -17,7 +17,7 @@ mongoose.connect('mongodb+srv://Yshrael:Yshrael.153241@cluster0.04i3d0j.mongodb.
         app.use(express.json());
         app.use(router);
 
-        console.log('🍃 Connecting in mongo');
+        console.log('🍃 Connecting in mongoDB');
     })
     .catch(() => console.log(' Err in conect in mongoDB '));
 
