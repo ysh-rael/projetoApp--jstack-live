@@ -9,6 +9,7 @@ interface OrderBoardProps {
     orders: Order[];
 }
 
+
 export function OrderBoard({ icon, title, orders }: OrderBoardProps) {
     const [isModalVisible, setIsModalVisible] = useState(false);
     const [selectedOrder, setSelectedOrder] = useState<null | Order>(null);
@@ -22,6 +23,9 @@ export function OrderBoard({ icon, title, orders }: OrderBoardProps) {
         setIsModalVisible(false);
         setSelectedOrder(null);
     }
+
+
+    console.log(orders);
 
     return (
         <Board>
@@ -38,20 +42,24 @@ export function OrderBoard({ icon, title, orders }: OrderBoardProps) {
             </header>
 
 
-
             {orders.length > 0 && (
                 <OrderConteiner>
-
-                    {orders.map((order) => {
-
+                    {orders.map(order => (
                         <button type='button' key={order._id} onClick={() => handleOpenModal(order)}>
                             <strong>Mesa {order.table}</strong>
                             <span>{order.products.length} Itens</span>
                         </button>
 
-                    })}
+                    ))}
+
+
+
                 </OrderConteiner>
             )}
         </Board>
     );
 }
+
+/*
+
+ */
