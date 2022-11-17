@@ -114,7 +114,7 @@ export const Actions = styled.footer`
 display: flex;
 flex-direction: column;
 margin-top: 32px;
-    .primoty {
+    .primory {
         background: #333333;
         border-radius: 48px;
         border: 0;

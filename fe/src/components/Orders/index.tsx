@@ -43,13 +43,13 @@ export function Orders() {
             <OrderBoard
                 icon='👨‍🍳'
                 title='Em preparação'
-                orders = {orders}
+                orders = {[]}
 
             />
             <OrderBoard
                 icon='👨✅'
                 title='Fila de espera'
-                orders = {orders}
+                orders = {[]}
 
             />
 

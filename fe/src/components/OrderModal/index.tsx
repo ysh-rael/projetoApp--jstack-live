@@ -75,7 +75,7 @@ export function OrderModal({ visible, order, onClose }: OrderModalProps) {
 
                 <Actions>
                     <button type='button' className="primory">
-                        <span>🧑‍🍳</span>
+                        <span>🧑‍🍳 </span>
                         <strong>Iniciar produção</strong>
                     </button>
 
