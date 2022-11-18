@@ -9,6 +9,7 @@ import {
 import { Header } from '../components/Header';
 import { Categories } from '../components/Categories';
 import { Menu } from '../components/Menu';
+import { Button } from '../components/Button';
 
 
 
@@ -28,6 +29,7 @@ export function Main() {
             <FooterConteiner>
                 <Footer>
                     {/* eu inverti: footer é footerConteiner e vice e versa. */}
+                    <Button label='Novo pedido' onPress={()=> alert('ok')}/>
                 </Footer>
             </FooterConteiner>
         </>

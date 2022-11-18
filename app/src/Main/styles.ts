@@ -26,4 +26,5 @@ export const FooterConteiner = styled.View`
 export const Footer = styled.SafeAreaView`
     min-height: 110px;
     background: #fff;
+    padding: ${isAndroid? '24px': '16px'} 24px;
 `;
